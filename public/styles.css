@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.add-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px; /* Adjust the width as needed */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f7f7f7; /* Set a background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  z-index: 2; /* Place the "Add a destination" section above other content */
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Destination Blocks */
+#display-section {
+  text-align: left;
+}
+
+.destination {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.destination img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.destination h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.destination button {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.destination.Beach {
+  background-color: #ffe082; /* Light yellow */
+}
+
+.destination.Culture {
+  background-color: #81d4fa; /* Light blue */
+}
+
+.destination.Nature {
+  background-color: #c5e1a5; /* Light green */
+}
+
+.destination.Urban {
+  background-color: #f48fb1; /* Light pink */
+}
+
+/* Filter Dropdown */
+#filterDropdown {
+  padding: 5px;
+}
